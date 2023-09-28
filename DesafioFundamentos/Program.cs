@@ -28,8 +28,9 @@ while (exibirMenu)
     Console.WriteLine("2 - Remover veículo");
     Console.WriteLine("3 - Listar veículos");
     Console.WriteLine("4 - Encerrar");
+    var escolha = Console.ReadLine();
 
-    switch (Console.ReadLine())
+    switch (escolha)
     {
         case "1":
             es.AdicionarVeiculo();
@@ -52,6 +53,7 @@ while (exibirMenu)
             break;
     }
 
+    
     Console.WriteLine("Pressione uma tecla para continuar");
     Console.ReadLine();
 }
